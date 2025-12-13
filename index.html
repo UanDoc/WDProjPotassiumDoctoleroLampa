@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
     <title>Uan and Rey's website</title>
     <link rel="icon" type="image/x-icon" href="/ASSETS/Images/1 - FAVICON.png">
+
     
     <style>
 
         body {
-            background-image: url(/ASSETS/Images/Apple\ Click.png);
-            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(./ASSETS/Images/Apple\ Click.png);
+            font-family: 'Quicksand', Arial, Helvetica, sans-serif;
             color: transparent;
         }
 
@@ -37,6 +39,12 @@
             .picture img {
                 width: 400px;
                 margin: 30px;
+
+                animation-name: bob;
+                animation-duration: 2s;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
             }
 
             .container3 {
@@ -46,6 +54,12 @@
                 border-radius: 13px;
                 margin: 5px 10px;
                 padding: 5px;
+
+                animation-name: bob;
+                animation-duration: 2s;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
             }
 
             .container4 {
@@ -54,6 +68,12 @@
                 background-color: #fffee9;
                 border-radius: 13px;
                 margin: auto;
+
+                animation-name: bob;
+                animation-duration: 2s;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
             }
 
             .text {
@@ -67,21 +87,43 @@
             }
 
             .container5 {
-                width: 790px;
-                height: 150px;
+                width: 760px;
+                height: 140px;
                 background-color: #d53b3b;
                 border-radius: 13px;
                 position: absolute;
                 top: 70px;
                 left: 610px;
+
+                animation-name: bob;
+                animation-duration: 2s;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
             }
 
             .container6 {
-                width: 770px;
-                height: 120px;
+                width: 740px;
+                height: 110px;
                 background-color: #fffee9;
                 border-radius: 13px;
-                margin: 10px 10px;
+                margin: auto;
+
+                animation-name: bob;
+                animation-duration: 2s;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+            }
+
+            @keyframes bob {
+                0% {
+                    transform: translateY(0);
+                }
+
+                100% {
+                    transform: translateY(-5px);
+                }
             }
 
             .text1 {
@@ -92,6 +134,7 @@
                 display: flex;
                 font-weight: bolder;
                 margin: 20px 15px;
+                justify-content: center;
             }
 
     </style>
@@ -117,17 +160,24 @@
                     </div>
                 </div>
             </div>
-            <div class = "container5" style="top: 230px;">
+            <div class = "container5" style="top: 220px;">
                 <div class = "container6">
                     <div class = "text1">
                         <a href = https://x.com/Drake>About Us</a>
                     </div>
                 </div>
         </div>
-        <div class = "container5" style="top: 390px;">
+        <div class = "container5" style="top: 370px;">
                 <div class = "container6">
                     <div class = "text1">
                         <a href = https://x.com/selenagomez>Contact</a>
+                    </div>
+                </div>
+        </div>
+        <div class = "container5" style="top: 520px;">
+                <div class = "container6">
+                    <div class = "text1">
+                        <a href = https://en.wikipedia.org/wiki/Katy_Perry>Gallery</a>
                     </div>
                 </div>
         </div>
