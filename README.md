@@ -22,27 +22,27 @@
 
 ## Favicon:
 
-![The Favicon used](/ASSETS/Images/1%20-%20FAVICON.png "Our Favicon !!")
+![The Favicon used](/PUBLIC/ASSETS/Images/1%20-%20FAVICON.png "Our Favicon !!")
 
 ## Wireframe:
 
 Homepage:
-![The Homepage](/ASSETS/Wireframe/Homepage.png "Our Homepage !!")
+![The Homepage](/PUBLIC/ASSETS/Wireframe/Homepage.png "Our Homepage !!")
 
 Socials: 
-![The Socials](/ASSETS/Wireframe/Socials.png "Our Social !!")
+![The Socials](/PUBLIC/ASSETS/Wireframe/Socials.png "Our Social !!")
 
 Game:
-![The Game](/ASSETS/Wireframe/Game.png "Our Game !!")
+![The Game](/PUBLIC/ASSETS/Wireframe/Game.png "Our Game !!")
 
 Gallery:
-![The Gallery](/ASSETS/Wireframe/Gallery.png "Our Gallery !!")
+![The Gallery](/PUBLIC/ASSETS/Wireframe/Gallery.png) "Our Gallery !!")
 
 Credits:
-![The Credits](/ASSETS/Wireframe/Credits.png "Our Credits !!")
+![The Credits](/PUBLIC/ASSETS/Wireframe/Credits.png "Our Credits !!")
 
 Header:
-![The Header](/ASSETS/Wireframe/Header.png "Our Header !!")
+![The Header](/PUBLIC/ASSETS/Wireframe/Header.png "Our Header !!")
 
 Footer:
-![The Footer](/ASSETS/Wireframe/Footer.png "Our Header !!")
+![The Footer](/PUBLIC/ASSETS/Wireframe/Footer.png "Our Header !!").pn
