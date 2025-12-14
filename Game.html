@@ -1,43 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
-        <title>Uan and Rey's website</title>
-        <link rel="icon" type="image/x-icon" href= "./public/assets/Images/Favicon.png">
-        </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
+    <title>Uan and Rey's website</title>
+    <link rel="icon" type="image/x-icon" href="./public/assets/Images/Favicon.png">
 
-        <style>
+    <style>
+        body {
+            font-family: 'Quicksand', Arial, sans-serif;
+            background: #fff;
+            margin: 0;
+            overflow: hidden;
+        }
 
-            body {
-            background-image: url(./public/assets/Images/Background.jpg);
-            font-family: 'Quicksand', Arial, Helvetica, sans-serif;
-            color: transparent;
+        .container {
+            position: relative;
+            z-index: 10;
+            width: 320px;
+            margin: 40px auto;
+            padding: 20px;
+            background: -webkit-linear-gradient(#d53b3b, #972323);
+            border-radius: 13px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        .ui-container {
+            position: relative;
+            z-index: 10;
+            width: 280px;
+            margin: 5px auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 13px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        button {
+            padding: 10px;
+            margin: 5px 0;
+            font-size: 16px;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 20px;
+            font-family: 'Quicksand';
+
+            border-color: #d53b3b;
+        }
+
+        /* Falling cookie particles */
+        .apple {
+            position: fixed;
+            top: -50px;
+            z-index: 1;
+            pointer-events: none;
+            animation: fall linear forwards;
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(110vh);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- UI Layer -->
+    <div class = "container">
+    <div class="ui-container">
+        <h1>🍎 Apple Clicker</h1>
+        <h2>Cookies: <span id="apples">0</span></h2>
+        <h3>Rebirths: <span id="rebirths">0</span></h3>
+        <h3>Multiplier: x<span id="multiplier">1</span></h3>
+
+        <button id="rebirthBtn" onclick="rebirth()" style="display:none; background:#d53b3b">
+         🔄 Rebirth (1,000,000 apples)
+        </button>
+
+        <button onclick="clickApple()">Click Cookie</button>
+
+        <h3>Upgrades</h3>
+        <button onclick="buyUpgrade(1)">Cursor (+1/sec) - 10 cookies</button>
+        <button onclick="buyUpgrade(2)">Harvestor (+5/sec) - 50 cookies</button>
+        <button onclick="buyUpgrade(3)">Farm (+10/sec) - 100 cookies</button>
+        <button onclick="buyUpgrade(4)">Orchard (+20/sec) - 200 cookies</button>
+    </div>
+    </div>
+
+    <script>
+        let apples = 0;
+        let applesPerSecond = 0;
+
+        let rebirths = 0;
+        let multiplier = 1;
+
+        function clickApple() {
+            apples += 1 * multiplier;
+            updateDisplay();
+            spawnApple();
+        }
+
+        function buyUpgrade(type) {
+            if (type === 1 && apples >= 10) {
+                apples -= 10;
+                applesPerSecond += 1;
             }
 
-            .container {
-                width: 1300px;
-                height: 620px;
-                margin: 40px auto;
-                padding: 10px;
-                background: -webkit-linear-gradient(#d53b3b, #972323);
-                border-radius: 13px;
-                align-items: center;
+            else if (type === 2 && apples >= 50) {
+                apples -= 50;
+                applesPerSecond += 5;
             }
 
-            .container2 {
-                width: 1280px;
-                height: 610px;
-                margin: 5px auto;
-                padding: auto;
-                background-color: #fffee9;
-                border-radius: 13px;
-                align-items: center;
+            else if (type === 3 && apples >= 100) {
+                apples -= 100;
+                applesPerSecond += 10;
             }
-        </style>
 
+            else if (type === 4 && apples >= 200) {
+                apples -= 200;
+                applesPerSecond += 20;
+            }
+            
+        updateDisplay();
+    }
 
+    function rebirth() {
+        if (apples >= 100_000) {
+            rebirths++;
+            multiplier = 1 + rebirths * 0.5; // +50% per rebirth
 
+            apples = 0;
+            applesPerSecond = 0;
 
+            updateDisplay();
+        }
+    }
+
+    function updateDisplay() {
+        document.getElementById("apples").textContent = Math.floor(apples);
+        document.getElementById("rebirths").textContent = rebirths;
+        document.getElementById("multiplier").textContent = multiplier.toFixed(1);
+
+        document.getElementById("rebirthBtn").style.display =
+            apples >= 100_000 ? "block" : "none";
+    }
+
+    // Passive generation
+    setInterval(() => {
+        apples += applesPerSecond * multiplier;
+        updateDisplay();
+    }, 1000);
+
+    // Falling apples
+    function spawnApple() {
+        const apple = document.createElement("div");
+        apple.className = "apple";
+        apple.textContent = "🍎";
+
+        apple.style.left = Math.random() * window.innerWidth + "px";
+        apple.style.fontSize = 16 + Math.random() * 24 + "px";
+        apple.style.animationDuration = 2 + Math.random() * 3 + "s";
+
+        document.body.appendChild(apple);
+        setTimeout(() => apple.remove(), 5000);
+    }
+
+    setInterval(spawnApple, 600);
+</script>
+
+</body>
 </html>
