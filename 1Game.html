@@ -24,6 +24,7 @@
             justify-content: center;
             margin: auto;
             padding:5px;
+            z-index: 10;
         }
 
         .insidenav {
@@ -34,17 +35,25 @@
             width: 700px;
             justify-content: center;
             margin: auto;
+            z-index: 10;
         }
 
         a {
             color: #972323;
         }
 
+        .link {
+            margin: 8%;
+            justify-content: center;
+            align-items: center;
+
+        }
+
         .container {
             position: relative;
             z-index: 10;
             width: 320px;
-            margin: 40px auto;
+            margin: 15px auto;
             padding: 20px;
             background: -webkit-linear-gradient(#d53b3b, #972323);
             border-radius: 13px;
@@ -115,8 +124,10 @@
 
     <nav>
         <div class = "insidenav">
-        <a href="index.html" class = "link">Home 🏠︎</a>
-        <a href="About_Us.html" class = "link">About us</a>
+            <a href="index.html" class = "link">Home</a>
+            <a href="About_Us.html" class = "link">About us</a>
+            <a href="3Gallery.html" class = "link">Gallery</a>
+            <a href="4Socials.html" class = "link">Socials</a>
         </div>
     </nav>
 
@@ -131,15 +142,19 @@
          🔄 Rebirth (100,000 apples)
         </button>
 
-        <button onclick="clickApple()">Click Cookie</button>
+        <button onclick="clickApple()">Click Apple</button>
 
         <h3>Upgrades</h3>
-        <button onclick="buyUpgrade(1)">Cursor (+1/sec) - 10 cookies</button>
-        <button onclick="buyUpgrade(2)">Harvestor (+5/sec) - 50 cookies</button>
-        <button onclick="buyUpgrade(3)">Farm (+10/sec) - 100 cookies</button>
-        <button onclick="buyUpgrade(4)">Orchard (+20/sec) - 200 cookies</button>
+        <button onclick="buyUpgrade(1)">Cursor (+1/sec) - 10 apples</button>
+        <button onclick="buyUpgrade(2)">Harvestor (+5/sec) - 50 apples</button>
+        <button onclick="buyUpgrade(3)">Farm (+10/sec) - 100 apples</button>
+        <button onclick="buyUpgrade(4)">Orchard (+20/sec) - 200 apples</button>
     </div>
     </div>
+
+    <footer>
+        
+    </footer>
 
     <script>
         let apples = 0;
