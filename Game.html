@@ -10,9 +10,34 @@
     <style>
         body {
             font-family: 'Quicksand', Arial, sans-serif;
-            background: #fff;
+            background: url(./public/assets/Images/Bg.png);
             margin: 0;
             overflow: hidden;
+        }
+
+        nav {
+            font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+            height: 40px;
+            background: -webkit-linear-gradient(#d53b3b, #972323);
+            border-radius: 13px;
+            width: 700px;
+            justify-content: center;
+            margin: auto;
+            padding:5px;
+        }
+
+        .insidenav {
+            font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+            height: 38px;
+            background: #fff;
+            border-radius: 13px;
+            width: 700px;
+            justify-content: center;
+            margin: auto;
+        }
+
+        a {
+            color: #972323
         }
 
         .container {
@@ -24,7 +49,13 @@
             background: -webkit-linear-gradient(#d53b3b, #972323);
             border-radius: 13px;
             text-align: center;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+
+            animation-name: bob;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
         }
 
         .ui-container {
@@ -63,14 +94,31 @@
         @keyframes fall {
             to {
                 transform: translateY(110vh);
-                opacity: 0;
+                opacity: 1;
             }
+
         }
+
+        @keyframes bob {
+                0% {
+                    transform: translateY(0);
+                }
+
+                100% {
+                    transform: translateY(-10px);
+                }
+            }
+
     </style>
 </head>
 <body>
 
-    <!-- UI Layer -->
+    <nav>
+        <div class = "insidenav">
+        <a href="index.html" class = "link">Home 🏠︎</a>
+        </div>
+    </nav>
+
     <div class = "container">
     <div class="ui-container">
         <h1>🍎 Apple Clicker</h1>
@@ -79,7 +127,7 @@
         <h3>Multiplier: x<span id="multiplier">1</span></h3>
 
         <button id="rebirthBtn" onclick="rebirth()" style="display:none; background:#d53b3b">
-         🔄 Rebirth (1,000,000 apples)
+         🔄 Rebirth (100,000 apples)
         </button>
 
         <button onclick="clickApple()">Click Cookie</button>
@@ -125,14 +173,14 @@
                 apples -= 200;
                 applesPerSecond += 20;
             }
-            
+
         updateDisplay();
     }
 
     function rebirth() {
         if (apples >= 100_000) {
             rebirths++;
-            multiplier = 1 + rebirths * 0.5; // +50% per rebirth
+            multiplier = 1 + rebirths * 0.5;
 
             apples = 0;
             applesPerSecond = 0;
@@ -150,13 +198,11 @@
             apples >= 100_000 ? "block" : "none";
     }
 
-    // Passive generation
     setInterval(() => {
         apples += applesPerSecond * multiplier;
         updateDisplay();
     }, 1000);
 
-    // Falling apples
     function spawnApple() {
         const apple = document.createElement("div");
         apple.className = "apple";
