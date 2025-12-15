@@ -52,7 +52,7 @@
 
         .container1 {
             width: 1300px;
-            height: 620px;
+            height: 300px;
             margin: 40px auto;
             padding: 10px;
             background: -webkit-linear-gradient(#d53b3b, #972323);
@@ -63,7 +63,7 @@
 
         .container2 {
             width: 1280px;
-            height: 600px;
+            height: 280px;
             padding: 10px;
             background: #fff;
             border-radius: 13px;
@@ -98,6 +98,15 @@
             z-index: 10;
         }
 
+        .picture img {
+            width: 400px;
+            margin: 20px 30px;
+            border-radius: 13px;
+            border: 10px solid #972323;
+
+
+        }
+
         .text3 {
             font-size: 20px;
             background: -webkit-linear-gradient(#d53b3b, #972323);
@@ -107,6 +116,22 @@
             font-weight: bolder;
             margin: 5px auto;
             justify-content: center;
+
+            animation-name: bob;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes bob {
+                0% {
+                    transform: translateY(0);
+                }
+
+                100% {
+                    transform: translateY(-5px);
+                }
         }
 
 
@@ -125,7 +150,33 @@
 
     <div class = "container1">
         <div class = "container2">
-            
+            <div class = "picture">
+                <img src = "https://english.news.cn/20221011/f62cd5d708c8402db0c3e1d1f2224187/20221011f62cd5d708c8402db0c3e1d1f2224187_5b2098e4-e9ed-4a66-8172-3e8d5ef46afb.jpg">
+            </div>
+            <div class = "text3">
+                Uan's favorite type of apple variant is that of the Fuji apple. Did you know? The largest Fuji apple orchard exists in the Loess plateaus of China, especially in the Luochuan (洛川县) county. The Fuji apple variant is known for being sweet, juicy, and crisp; additionally, the Fuji apple variant was actually a crossbreed developed in Japan (To be specific, the first development of this kind of apple was in Fujisaki, Aomori, Japan, Tohoku Research Station) between the American apple variants of "Red Delicious" and "Ralls Janet" apple variations. The Fuji apple variant also has multiple titles, such as, "Favorite world-wide," a title this apple variant has held ever since 1962.
+            </div>
+        </div>
+    </div>
+
+    <div class = "container1">
+        <div class = "container2">
+            <div class = "picture">
+                <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn5lq8Bf-BkA72BMa8ywlZWLO6sFsYRORGUQ&s">
+            </div>
+            <div class = "text3">
+                Supporting local businesses is an important cause that we as Philippine Science High School (PSHS) students should do, it is crucial we support our local community so that we can assist our fellow filipinos. Now, let me introduce you to the most renowned apple orchard in the Philippines, Kapatagan Apple Orchard in Digos City, Davao Del Sur (Mindanao). Since the Philippines is a low-lying country seated inside the ring of fire, it is rare that we are able to produce cold-hardy plants (for example, apples and strawberries); therefore, we should celebrate the local community for being able to grow these natural produces even in our climate!
+            </div>
+        </div>
+    </div>
+
+    <div class = "container1" style = "margin-bottom: 30px;">
+        <div class = "container2" style = "margin-bottom: 30px;">
+            <div class = "picture">
+                <img src = "https://images.seattletimes.com/wp-content/uploads/2023/10/10022023_12_211856.jpg?d=780x520">
+            </div>
+            <div class = "text3">
+                Currently, the Americas are experiencing a record crop (which means, the highest yield of crop in a given area) in major apple states (such as, Washington). Did you know? The Americas are the 2nd largest producers of apples, the 1st place being held by China. The major varieties sold by the Americas is that of the Gala, Fuji, Honeycrisp, and Granny Smith apple varieties; which all sell well in the international market. Innovation and market trends are what makes the Americas a major player for the international apple market. It goes to show how necessary strategy is if you're working on a business.
         </div>
     </div>
 
