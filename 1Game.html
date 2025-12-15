@@ -6,7 +6,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
     <title>Uan and Rey's website</title>
     <link rel="icon" type="image/x-icon" href="./public/assets/Images/Favicon.png">
-    
 
     <style>
         body {
@@ -16,27 +15,21 @@
         }
 
         nav {
-            font-family: 'Quicksand', Arial, Helvetica, sans-serif;
             height: 40px;
             background: -webkit-linear-gradient(#d53b3b, #972323);
             border-radius: 13px;
             width: 700px;
-            justify-content: center;
             margin: auto;
-            padding:5px;
-            z-index: 10;
+            padding: 5px;
         }
 
         .insidenav {
-            font-family: 'Quicksand', Arial, Helvetica, sans-serif;
             height: 20px;
             background: #fff;
             border-radius: 13px;
             width: 680px;
-            justify-content: center;
             margin: auto;
             padding: 10px;
-            z-index: 10;
         }
 
         a {
@@ -45,14 +38,10 @@
 
         .link {
             margin: 8%;
-            justify-content: center;
-            align-items: center;
-
         }
 
         .container {
             position: relative;
-            z-index: 10;
             width: 320px;
             margin: 15px auto;
             padding: 20px;
@@ -60,23 +49,15 @@
             border-radius: 13px;
             text-align: center;
             box-shadow: 0 0 20px rgba(0,0,0,0.2);
-
-            animation-name: bob;
-            animation-duration: 2s;
-            animation-timing-function: ease-in-out;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
+            animation: bob 2s ease-in-out infinite alternate;
         }
 
         .ui-container {
-            position: relative;
-            z-index: 10;
             width: 280px;
-            margin: 5px auto;
+            margin: auto;
             padding: 20px;
             background: #ffffff;
             border-radius: 13px;
-            text-align: center;
             box-shadow: 0 0 10px rgba(0,0,0,0.2);
         }
 
@@ -88,11 +69,9 @@
             cursor: pointer;
             border-radius: 20px;
             font-family: 'Quicksand';
-
             border-color: #d53b3b;
         }
 
-        /* Falling cookie particles */
         .apple {
             position: fixed;
             top: -50px;
@@ -104,80 +83,67 @@
         @keyframes fall {
             to {
                 transform: translateY(110vh);
-                opacity: 1;
             }
-
         }
 
         @keyframes bob {
-                0% {
-                    transform: translateY(0);
-                }
-
-                100% {
-                    transform: translateY(-10px);
-                }
+            to {
+                transform: translateY(-10px);
+            }
         }
 
         footer {
-            font-family: 'Quicksand', Arial, Helvetica, sans-serif;
             height: 50px;
             background: -webkit-linear-gradient(#d53b3b, #972323);
             border-radius: 13px;
             width: 700px;
-            justify-content: center;
             margin: auto;
-            padding:5px;
-            z-index: 10;
+            padding: 5px;
         }
 
         .insidefooter {
-            font-family: 'Quicksand', Arial, Helvetica, sans-serif;
             height: 30px;
             background: #fff;
             border-radius: 13px;
             width: 680px;
-            justify-content: center;
             margin: auto;
             padding: 10px;
-            z-index: 10;
         }
 
         .text3 {
-                font-size: 20px;
-                background: -webkit-linear-gradient(#d53b3b, #972323);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                display: flex;
-                font-weight: bolder;
-                margin: 5px auto;
-                justify-content: center;
+            font-size: 20px;
+            background: -webkit-linear-gradient(#d53b3b, #972323);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: flex;
+            font-weight: bolder;
+            justify-content: center;
         }
-
     </style>
 </head>
+
 <body>
 
-    <nav>
-        <div class = "insidenav">
-            <a href="./index.html" class = "link">Home</a>
-            <a href="./2About_Us.html" class = "link">About us</a>
-            <a href="./3Gallery.html" class = "link">Gallery</a>
-            <a href="./4Socials.html" class = "link">Socials</a>
-        </div>
-    </nav>
+<nav>
+    <div class="insidenav">
+        <a href="./index.html" class="link">Home</a>
+        <a href="./2About_Us.html" class="link">About us</a>
+        <a href="./3Gallery.html" class="link">Gallery</a>
+        <a href="./4Socials.html" class="link">Socials</a>
+    </div>
+</nav>
 
-    <div class = "container">
+<div class="container">
     <div class="ui-container">
-        <h1> 🍎 Instructions: </h1>
-        <h3> 1. Try the best you can to get the highest amount of apples you could get. The more you have, the more you can upgrade with. </h3>
-        <h3> 2. Every 100,000 apples, you are able to rebirth which adds a 0.5 multiplier to every apple upgrade you can get. Enjoy each upgrade every time you are able to rebirth.</h3>
-        <h3> 3. Of course, Have lots of fun! </h3>
-        <h4> ⚠️ Game does not save. </h4>
+        <h1>🍎 Instructions:</h1>
+        <h3>1. Get as many apples as you can.</h3>
+        <h3>2. Every 100,000 apples you can rebirth.</h3>
+        <h3>3. Have fun!</h3>
+        <h4>💾 Game auto-saves</h4>
     </div>
-    </div>
+</div>
 
-    <div class = "container">
+<div class="container">
     <div class="ui-container">
         <h1>🍎 Apple Clicker</h1>
         <h2>Apples: <span id="apples">0</span></h2>
@@ -185,73 +151,77 @@
         <h3>Multiplier: x<span id="multiplier">1</span></h3>
 
         <button id="rebirthBtn" onclick="rebirth()" style="display:none; background:#d53b3b">
-         🔄 Rebirth (100,000 apples)
+            🔄 Rebirth (100,000 apples)
         </button>
 
         <button onclick="clickApple()">Click Apple</button>
 
-        <h3>Upgrades</h3> 
+        <h3>Upgrades</h3>
         <button onclick="buyUpgrade(1)">Cursor (+1/sec) - 10 apples</button>
         <button onclick="buyUpgrade(2)">Harvestor (+5/sec) - 50 apples</button>
         <button onclick="buyUpgrade(3)">Farm (+10/sec) - 100 apples</button>
         <button onclick="buyUpgrade(4)">Orchard (+20/sec) - 200 apples</button>
     </div>
+</div>
+
+<footer>
+    <div class="insidefooter">
+        <div class="text3">Copyright of Doctolero and Lampa</div>
     </div>
+</footer>
 
-    <footer>
-        <div class = "insidefooter">
-            <div class = "text3">
-                Copyright of Doctolero and Lampa
-            </div>
-        </div>
-    </footer>
+<script>
+    let apples = 0;
+    let applesPerSecond = 0;
+    let rebirths = 0;
+    let multiplier = 1;
 
-    <script>
-        let apples = 0;
-        let applesPerSecond = 0;
+    function saveGame() {
+        localStorage.setItem("appleClickerSave", JSON.stringify({
+            apples,
+            applesPerSecond,
+            rebirths,
+            multiplier
+        }));
+    }
 
-        let rebirths = 0;
-        let multiplier = 1;
-
-        function clickApple() {
-            apples += 1 * multiplier;
-            updateDisplay();
-            spawnApple();
-        }
-
-        function buyUpgrade(type) {
-            if (type === 1 && apples >= 10) {
-                apples -= 10;
-                applesPerSecond += 1;
-            }
-
-            else if (type === 2 && apples >= 50) {
-                apples -= 50;
-                applesPerSecond += 5;
-            }
-
-            else if (type === 3 && apples >= 100) {
-                apples -= 100;
-                applesPerSecond += 10;
-            }
-
-            else if (type === 4 && apples >= 200) {
-                apples -= 200;
-                applesPerSecond += 20;
-            }
-
+    function loadGame() {
+        const data = localStorage.getItem("appleClickerSave");
+        if (!data) return;
+        const save = JSON.parse(data);
+        apples = save.apples || 0;
+        applesPerSecond = save.applesPerSecond || 0;
+        rebirths = save.rebirths || 0;
+        multiplier = save.multiplier || 1;
         updateDisplay();
     }
 
+    function clickApple() {
+        apples += 1 * multiplier;
+        updateDisplay();
+        spawnApple();
+        saveGame();
+    }
+
+    function buyUpgrade(type) {
+        const costs = [0, 10, 50, 100, 200];
+        const gains = [0, 1, 5, 10, 20];
+        if (apples >= costs[type]) {
+            apples -= costs[type];
+            applesPerSecond += gains[type];
+            updateDisplay();
+            saveGame();
+        }
+    }
+
     function rebirth() {
-        if (apples >= 100_000) {
+        if (apples >= 100000) {
             rebirths++;
             multiplier = 1 + rebirths * 0.5;
-
             apples = 0;
             applesPerSecond = 0;
-
             updateDisplay();
+            saveGame();
         }
     }
 
@@ -259,9 +229,8 @@
         document.getElementById("apples").textContent = Math.floor(apples);
         document.getElementById("rebirths").textContent = rebirths;
         document.getElementById("multiplier").textContent = multiplier.toFixed(1);
-
         document.getElementById("rebirthBtn").style.display =
-            apples >= 100_000 ? "block" : "none";
+            apples >= 100000 ? "block" : "none";
     }
 
     setInterval(() => {
@@ -273,19 +242,18 @@
         const apple = document.createElement("div");
         apple.className = "apple";
         apple.textContent = "🍎";
-
         apple.style.left = Math.random() * window.innerWidth + "px";
         apple.style.fontSize = 16 + Math.random() * 24 + "px";
         apple.style.animationDuration = 2 + Math.random() * 3 + "s";
-
         document.body.appendChild(apple);
         setTimeout(() => apple.remove(), 5000);
     }
 
     setInterval(spawnApple, 600);
+    setInterval(saveGame, 5000);
+
+    window.onload = loadGame;
 </script>
-
-
 
 </body>
 </html>
