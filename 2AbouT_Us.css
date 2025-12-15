@@ -1,0 +1,141 @@
+nav {
+            font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+            height: 40px;
+            background: -webkit-linear-gradient(#d53b3b, #972323);
+            border-radius: 13px;
+            width: 700px;
+            justify-content: center;
+            margin: auto;
+            padding:5px;
+            z-index: 10;
+        }
+
+        .insidenav {
+            font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+            height: 20px;
+            background: #fff;
+            border-radius: 13px;
+            width: 680px;
+            justify-content: center;
+            margin: auto;
+            padding: 10px;
+            z-index: 10;
+        }
+
+        a {
+            color: #972323;
+        }
+
+        .link {
+            margin: 8%;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        body {
+            font-family: 'Quicksand', Arial, sans-serif;
+            background: url(./public/assets/Images/Bg.png);
+            margin: 0;
+        }
+
+        .container1 {
+            width: 1300px;
+            height: 300px;
+            margin: 40px auto;
+            padding: 10px;
+            background: -webkit-linear-gradient(#d53b3b, #972323);
+            border-radius: 13px;
+            align-items: center;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        }
+
+        .container2 {
+            width: 1280px;
+            height: 280px;
+            margin: 5px auto;
+            padding: auto;
+            background-color: #ffffff;
+            border-radius: 13px;
+            align-items: top;
+            display: flex;
+        }
+
+        .picture img {
+            width: 400px;
+            margin: 20px 30px;
+            border-radius: 13px;
+            border: 10px solid #972323;
+
+            animation-name: bob;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        .text1 {
+            font-size: 24px;
+            color: #d53b3b;
+            margin: 35px 35px;
+            font-weight: bolder;
+
+            animation-name: bob;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        .text2 {
+            font-size: 20px;
+            color: #000;
+            margin: 20px 10px;
+            margin-left: 20px;
+            font-weight: bolder;
+        }
+
+        @keyframes bob {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-5px);
+            }
+        }
+
+                footer {
+            font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+            height: 50px;
+            background: -webkit-linear-gradient(#d53b3b, #972323);
+            border-radius: 13px;
+            width: 700px;
+            justify-content: center;
+            margin: auto;
+            padding:5px;
+            z-index: 10;
+        }
+
+        .insidefooter {
+            font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+            height: 30px;
+            background: #fff;
+            border-radius: 13px;
+            width: 680px;
+            justify-content: center;
+            margin: auto;
+            padding: 10px;
+            z-index: 10;
+        }
+
+        .text3 {
+                font-size: 20px;
+                background: -webkit-linear-gradient(#d53b3b, #972323);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                display: flex;
+                font-weight: bolder;
+                margin: 5px auto;
+                justify-content: center;
+        }

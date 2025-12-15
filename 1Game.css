@@ -1,0 +1,111 @@
+body {
+            font-family: 'Quicksand', Arial, sans-serif;
+            background: url(./public/assets/Images/Bg.png);
+            margin: 0;
+        }
+
+        nav {
+            height: 40px;
+            background: -webkit-linear-gradient(#d53b3b, #972323);
+            border-radius: 13px;
+            width: 700px;
+            margin: auto;
+            padding: 5px;
+        }
+
+        .insidenav {
+            height: 20px;
+            background: #fff;
+            border-radius: 13px;
+            width: 680px;
+            margin: auto;
+            padding: 10px;
+        }
+
+        a {
+            color: #972323;
+        }
+
+        .link {
+            margin: 8%;
+        }
+
+        .container {
+            position: relative;
+            width: 320px;
+            margin: 15px auto;
+            padding: 20px;
+            background: -webkit-linear-gradient(#d53b3b, #972323);
+            border-radius: 13px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            animation: bob 2s ease-in-out infinite alternate;
+        }
+
+        .ui-container {
+            width: 280px;
+            margin: auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 13px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        button {
+            padding: 10px;
+            margin: 5px 0;
+            font-size: 16px;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 20px;
+            font-family: 'Quicksand';
+            border-color: #d53b3b;
+        }
+
+        .apple {
+            position: fixed;
+            top: -50px;
+            z-index: 1;
+            pointer-events: none;
+            animation: fall linear forwards;
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(110vh);
+            }
+        }
+
+        @keyframes bob {
+            to {
+                transform: translateY(-10px);
+            }
+        }
+
+        footer {
+            height: 50px;
+            background: -webkit-linear-gradient(#d53b3b, #972323);
+            border-radius: 13px;
+            width: 700px;
+            margin: auto;
+            padding: 5px;
+        }
+
+        .insidefooter {
+            height: 30px;
+            background: #fff;
+            border-radius: 13px;
+            width: 680px;
+            margin: auto;
+            padding: 10px;
+        }
+
+        .text3 {
+            font-size: 20px;
+            background: -webkit-linear-gradient(#d53b3b, #972323);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: flex;
+            font-weight: bolder;
+            justify-content: center;
+        }
