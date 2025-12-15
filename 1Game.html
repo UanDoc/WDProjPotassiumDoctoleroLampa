@@ -13,7 +13,6 @@
             font-family: 'Quicksand', Arial, sans-serif;
             background: url(./public/assets/Images/Bg.png);
             margin: 0;
-            overflow: hidden;
         }
 
         nav {
@@ -118,7 +117,42 @@
                 100% {
                     transform: translateY(-10px);
                 }
-            }
+        }
+
+        footer {
+            font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+            height: 50px;
+            background: -webkit-linear-gradient(#d53b3b, #972323);
+            border-radius: 13px;
+            width: 700px;
+            justify-content: center;
+            margin: auto;
+            padding:5px;
+            z-index: 10;
+        }
+
+        .insidefooter {
+            font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+            height: 30px;
+            background: #fff;
+            border-radius: 13px;
+            width: 680px;
+            justify-content: center;
+            margin: auto;
+            padding: 10px;
+            z-index: 10;
+        }
+
+        .text3 {
+                font-size: 20px;
+                background: -webkit-linear-gradient(#d53b3b, #972323);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                display: flex;
+                font-weight: bolder;
+                margin: 5px auto;
+                justify-content: center;
+        }
 
     </style>
 </head>
@@ -132,6 +166,16 @@
             <a href="./4Socials.html" class = "link">Socials</a>
         </div>
     </nav>
+
+    <div class = "container">
+    <div class="ui-container">
+        <h1> 🍎 Instructions: </h1>
+        <h3> 1. Try the best you can to get the highest amount of apples you could get. The more you have, the more you can upgrade with. </h3>
+        <h3> 2. Every 100,000 apples, you are able to rebirth which adds a 0.5 multiplier to every apple upgrade you can get. Enjoy each upgrade every time you are able to rebirth.</h3>
+        <h3> 3. Of course, Have lots of fun! </h3>
+        <h4> ⚠️ Game does not save. </h4>
+    </div>
+    </div>
 
     <div class = "container">
     <div class="ui-container">
@@ -155,7 +199,11 @@
     </div>
 
     <footer>
-        
+        <div class = "insidefooter">
+            <div class = "text3">
+                Copyright of Doctolero and Lampa
+            </div>
+        </div>
     </footer>
 
     <script>
@@ -236,6 +284,8 @@
 
     setInterval(spawnApple, 600);
 </script>
+
+
 
 </body>
 </html>
