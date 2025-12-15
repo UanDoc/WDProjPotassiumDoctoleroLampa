@@ -59,18 +59,24 @@
 
         .container {
             width: 700px;
-            height: 580px;
+            height: 690px;
             margin: 40px auto;
             padding: 10px;
             background: -webkit-linear-gradient(#d53b3b, #972323);
             border-radius: 13px;
             align-items: center;
             box-shadow: 0 0 20px rgba(0,0,0,0.2);
+
+            animation-name: bob;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
         }
 
         .container2 {
             width: 680px;
-            height: 560px;
+            height: 670px;
             padding: 10px;
             background: #fff;
             border-radius: 13px;
@@ -134,6 +140,33 @@
             justify-content: center;
         }
 
+        .text2 {
+            font-size: 40px;
+            background: -webkit-linear-gradient(#d53b3b, #972323);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: flex;
+            font-weight: bolder;
+            justify-content: center;
+        }
+
+        .text4 {
+            font-size: 40px;
+            background: -webkit-linear-gradient(#d53b3b, #972323);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: flex;
+            font-weight: bolder;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        @keyframes bob {
+            to {
+                transform: translateY(-10px);
+            }
+        }
+
     </style>
 
 </head>
@@ -163,23 +196,32 @@
                 <div class="text1">
                     Tiktok: @ooga.booga738 
                 </div>
-                <div class = "text">
-                    
+                <div class="picture">
+                    <img src="./public/assets/AboutUs/uanpic.jpg">
+                </div>
+                <div class="text">
+                    JOSE GABRIEL LUIS J. LAMPA
+                </div>
+                <div class="text1">
+                    Instagram: @alien_r3y
+                </div>
+                <div class="text1">
+                    Twitter: @
                 </div>
             </div>
         </div>
 
         <div class="container">
             <div class="container2">
-                <div class="picture">
-                    
+                <div class="text2">
+                    SOURCES:
                 </div>
-                <div class="text">
-
+                <div class = "text1">
+                    🍎 W3Schools.com. (n.d.). https://www.w3schools.com/
+                </div>
                 </div>
             </div>
         </div>
-    </div>
 
     <footer>
         <div class = "insidefooter">
