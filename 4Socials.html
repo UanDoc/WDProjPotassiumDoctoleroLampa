@@ -43,7 +43,6 @@
             margin: 8%;
             justify-content: center;
             align-items: center;
-
         }
 
         body {
@@ -60,7 +59,7 @@
 
         .container {
             width: 700px;
-            height: 300px;
+            height: 580px;
             margin: 40px auto;
             padding: 10px;
             background: -webkit-linear-gradient(#d53b3b, #972323);
@@ -71,14 +70,12 @@
 
         .container2 {
             width: 680px;
-            height: 280px;
+            height: 560px;
             padding: 10px;
             background: #fff;
             border-radius: 13px;
-            align-items: center;
             box-shadow: 0 0 20px rgba(0,0,0,0.2);
-            display: flex;
-            align-items: top;
+            justify-content: center;
         }
 
         .text {
@@ -92,11 +89,49 @@
             justify-content: center;
         }
 
+        .text1 {
+            font-size: 15px;
+            color: #000;
+            display: flex;
+            font-weight: bolder;
+            margin: 1px auto;
+            justify-content: center;
+        }
+
         .picture img {
             width: 400px;
-            margin: 20px 30px;
+            margin: 10px auto;
+            display: block;
             border-radius: 13px;
             border: 10px solid #972323;
+        }
+
+        footer {
+            height: 50px;
+            background: -webkit-linear-gradient(#d53b3b, #972323);
+            border-radius: 13px;
+            width: 700px;
+            margin: auto;
+            padding: 5px;
+        }
+
+        .insidefooter {
+            height: 30px;
+            background: #fff;
+            border-radius: 13px;
+            width: 680px;
+            margin: auto;
+            padding: 10px;
+        }
+
+        .text3 {
+            font-size: 20px;
+            background: -webkit-linear-gradient(#d53b3b, #972323);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: flex;
+            font-weight: bolder;
+            justify-content: center;
         }
 
     </style>
@@ -113,28 +148,46 @@
         </div>
     </nav>
 
-    <div class = "parent">
-        <div class = "container">
-            <div class = "container2">
-                <div class = "picture">
-                    
+    <div class="parent">
+        <div class="container">
+            <div class="container2">
+                <div class="picture">
+                    <img src="./public/assets/AboutUs/uanpic.jpg">
+                </div>
+                <div class="text">
+                    UAN D. DOCTOLERO
+                </div>
+                <div class="text1">
+                    Instagram: @Etcupsie 
+                </div>
+                <div class="text1">
+                    Tiktok: @ooga.booga738 
                 </div>
                 <div class = "text">
                     
                 </div>
             </div>
         </div>
-        <div class = "container">
-            <div class = "container2">
-                <div class = "picture">
+
+        <div class="container">
+            <div class="container2">
+                <div class="picture">
                     
                 </div>
-                <div class = "text">
+                <div class="text">
 
                 </div>
             </div>
         </div>
     </div>
+
+    <footer>
+        <div class = "insidefooter">
+            <div class = "text3">
+                Copyright of Doctolero, Lampa
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
