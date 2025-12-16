@@ -157,3 +157,9 @@
             }
         }
 
+        .picture1 img {
+            width: 280px;
+            margin: 10px auto;
+            display: block;
+        }
+
