@@ -94,7 +94,8 @@
         }
 
         .picture img {
-            width: 400px;
+            width: 320px;
+            height: 220px;
             margin: 10px auto;
             display: block;
             border-radius: 13px;
