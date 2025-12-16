@@ -1,0 +1,159 @@
+
+
+        nav {
+            font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+            height: 40px;
+            background: -webkit-linear-gradient(#d53b3b, #972323);
+            border-radius: 13px;
+            width: 700px;
+            justify-content: center;
+            margin: auto;
+            padding:5px;
+            z-index: 10;
+        }
+
+        .insidenav {
+            font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+            height: 20px;
+            background: #fff;
+            border-radius: 13px;
+            width: 680px;
+            justify-content: center;
+            margin: auto;
+            padding: 10px;
+            z-index: 10;
+        }
+
+        a {
+            color: #972323;
+        }
+
+        .link {
+            margin: 8%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        body {
+            font-family: 'Quicksand', Arial, sans-serif;
+            background: url(./public/assets/Images/Bg.png);
+            margin: 0;
+        }
+
+        .parent {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .container {
+            width: 700px;
+            height: 690px;
+            margin: 40px auto;
+            padding: 10px;
+            background: -webkit-linear-gradient(#d53b3b, #972323);
+            border-radius: 13px;
+            align-items: center;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+
+            animation-name: bob;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        .container2 {
+            width: 680px;
+            height: 670px;
+            padding: 10px;
+            background: #fff;
+            border-radius: 13px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            justify-content: center;
+        }
+
+        .text {
+            font-size: 20px;
+            background: -webkit-linear-gradient(#d53b3b, #972323);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: flex;
+            font-weight: bolder;
+            margin: 5px auto;
+            justify-content: center;
+        }
+
+        .text1 {
+            font-size: 15px;
+            color: #000;
+            display: flex;
+            font-weight: bolder;
+            margin: 1px auto;
+            justify-content: center;
+        }
+
+        .picture img {
+            width: 400px;
+            margin: 10px auto;
+            display: block;
+            border-radius: 13px;
+            border: 10px solid #972323;
+        }
+
+        footer {
+            height: 50px;
+            background: -webkit-linear-gradient(#d53b3b, #972323);
+            border-radius: 13px;
+            width: 700px;
+            margin: auto;
+            padding: 5px;
+        }
+
+        .insidefooter {
+            height: 30px;
+            background: #fff;
+            border-radius: 13px;
+            width: 680px;
+            margin: auto;
+            padding: 10px;
+            
+        }
+
+        .text3 {
+            font-size: 20px;
+            background: -webkit-linear-gradient(#d53b3b, #972323);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: flex;
+            font-weight: bolder;
+            justify-content: center;
+        }
+
+        .text2 {
+            font-size: 40px;
+            background: -webkit-linear-gradient(#d53b3b, #972323);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: flex;
+            font-weight: bolder;
+            justify-content: center;
+        }
+
+        .text4 {
+            font-size: 40px;
+            background: -webkit-linear-gradient(#d53b3b, #972323);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: flex;
+            font-weight: bolder;
+            justify-content: center;
+            margin: 10px;
+        }
+
+        @keyframes bob {
+            to {
+                transform: translateY(-10px);
+            }
+        }
+
