@@ -35,7 +35,7 @@ nav {
 
         body {
             font-family: 'Quicksand', Arial, sans-serif;
-            background: url(./public/assets/Images/Bg.png);
+            background: url(../assets/Images/Bg.png);
             margin: 0;
         }
 

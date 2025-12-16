@@ -1,5 +1,5 @@
 body {
-            background: url(./public/assets/Images/Bg.png); 
+            background: url(../assets/Images/Bg.png); 
             font-family: 'Quicksand', Arial, Helvetica, sans-serif;
             color: transparent;
         }
