@@ -1,4 +1,4 @@
-# TITLE: Apple Clicker
+# FINAL TITLE: Apple Clicker
 
 ## Description:
 
@@ -46,3 +46,11 @@ Header:
 
 Footer:
 ![The Footer](/assets/Wireframe/Footer.png "Our Footer !!")
+
+## Features:
+
+"Saving" - Our website remembers the previous progress of the player. Whenever the player re-logins into the website it replicates the already made progress.
+
+"Game" - Our website includes a game that is fun, interactive, time-consuming.
+
+"Informative" - You can learn about the recent news and history regarding the apple market and the origins of popular apples.
