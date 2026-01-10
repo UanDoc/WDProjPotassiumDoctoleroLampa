@@ -68,3 +68,7 @@ Features:
 2nd page: Save slots
  
 3rd page: Deletion of data
+
+## Updated set of wireframes: 
+
+Header
