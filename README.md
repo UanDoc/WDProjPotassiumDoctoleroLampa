@@ -47,10 +47,24 @@ Header:
 Footer:
 ![The Footer](/assets/Wireframe/Footer.png "Our Footer !!")
 
-## Features:
+## Project Proposal:
+
+Narrative: 
+
+> Before the first project proposal, me and my groupmate had already made a saving feature within our website. But, the difference is the game saves within the computer, meaning, the data cannot be transferred between multiple devices underneath a certain e-mail. For our website specifically, we will use the HTML form (for login and sign-up) so that the data can be moved to other devices. 
+
+Features:
 
 "Saving" - Our website remembers the previous progress of the player. Whenever the player re-logins into the website it replicates the already made progress.
 
 "Game" - Our website includes a game that is fun, interactive, time-consuming.
 
 "Informative" - You can learn about the recent news and history regarding the apple market and the origins of popular apples.
+
+## New set of wireframes:
+
+1st page: Account sign-up
+
+2nd page: Save slots
+ 
+3rd page: Deletion of data
