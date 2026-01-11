@@ -63,12 +63,17 @@ Features:
 
 ## New set of wireframes:
 
-1st page: Account sign-up
+1st page: Account sign-up:
+![The sign-up page](/assets/Wireframe/Sign-up.png)
 
-2nd page: Save slots
+2nd page: Save slots:
+![The save page](/assets/Wireframe/Save.png)
  
-3rd page: Deletion of data
+3rd page: Deletion of data:
+![The deletion page (part 1)](/assets/Wireframe/Delete.png)
+![The deletion page (part 2)](/assets/Wireframe/Delete2.png)
 
 ## Updated set of wireframes: 
 
 Header
+![The updated header](/assets/Wireframe/Header2.png)
