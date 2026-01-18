@@ -65,14 +65,14 @@
             </div>
 
             <form id="studentform">
-                <label for="studentname">What is your name?</label><br>
-                <input type="text" id="studentname" name="studentname"><br><br>
+                <label for="studentname">What is your name?</label>
+                <input type="text" id="studentname" name="studentname"><br>
 
-                <label for="birthday">When is your birthday?</label><br>
-                <input type="date" id="birthday" name="birthday"><br><br>
+                <label for="birthday">When is your birthday?</label>
+                <input type="date" id="birthday" name="birthday"><br>
 
-                <label for="fruit">What's your favorite fruit?</label><br>
-                <input type="text" id="fruit" name="fruit"><br><br>
+                <label for="fruit">What's your favorite fruit?</label>
+                <input type="text" id="fruit" name="fruit"><br>
 
                 <button type="button" onclick="saveInfo()">Submit</button>
             </form>
@@ -116,7 +116,6 @@
 
             if (name && birthday && fruit) {
                 document.getElementById("output").innerHTML = `
-                    <strong>Saved User Information</strong><br>
                     Name: ${name}<br>
                     Birthday: ${birthday}<br>
                     Favorite Fruit: ${fruit}
