@@ -40,12 +40,6 @@
             margin: 0;
         }
 
-        .parent {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-
         .container {
             width: 700px;
             height: 690px;
@@ -109,6 +103,7 @@
             width: 700px;
             margin: auto;
             padding: 5px;
+            justify-content: center;
         }
 
         .insidefooter {
@@ -118,7 +113,7 @@
             width: 680px;
             margin: auto;
             padding: 10px;
-            
+            justify-content: center;
         }
 
         .text3 {
