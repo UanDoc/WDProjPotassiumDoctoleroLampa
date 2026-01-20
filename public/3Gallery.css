@@ -41,7 +41,7 @@ nav {
         }
 
         .container1 {
-            width: 1300px;
+            width: 700px;
             height: 300px;
             margin: 40px auto;
             padding: 10px;
@@ -52,7 +52,7 @@ nav {
         }
 
         .container2 {
-            width: 1280px;
+            width: 680px;
             height: 280px;
             padding: 10px;
             background: #fff;
@@ -98,7 +98,7 @@ nav {
         }
 
         .text3 {
-            font-size: 20px;
+            font-size: 11px;
             background: -webkit-linear-gradient(#d53b3b, #972323);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -114,24 +114,8 @@ nav {
             animation-direction: alternate;
         }
 
-        .text {
-            font-size: 20px;
-            background: -webkit-linear-gradient(#d53b3b, #972323);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            display: flex;
-            font-weight: bolder;
-
-            animation-name: bob;
-            animation-duration: 2s;
-            animation-timing-function: ease-in-out;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-
-        }
-
         form {
-            font-size: 20px;
+            font-size: 11px;
             color:#d53b3b;
             font-weight: bolder;
 

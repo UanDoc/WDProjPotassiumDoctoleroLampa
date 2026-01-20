@@ -41,7 +41,7 @@ nav {
         }
 
         .container1 {
-            width: 1300px;
+            width: 700px;
             height: 300px;
             margin: 40px auto;
             padding: 10px;
@@ -52,7 +52,7 @@ nav {
         }
 
         .container2 {
-            width: 1280px;
+            width: 680px;
             height: 280px;
             margin: 5px auto;
             padding: auto;
@@ -64,7 +64,7 @@ nav {
 
         .picture img {
             width: 400px;
-            margin: 20px 30px;
+            margin: 20px 5px;
             border-radius: 13px;
             border: 10px solid #972323;
 
@@ -76,7 +76,7 @@ nav {
         }
 
         .text1 {
-            font-size: 24px;
+            font-size: 12px;
             color: #d53b3b;
             margin: 20px;
             font-weight: bolder;
