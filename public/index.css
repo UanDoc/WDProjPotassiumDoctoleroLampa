@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-    width: 1300px;
+    width: 700px;
     height: 620px;
     margin: 40px auto;
     padding: 10px;
@@ -17,18 +17,18 @@ body {
 }
 
 .container2 {
-    width: 1280px;
+    width: 680px;
     height: 610px;
     margin: 5px auto;
     background-color: #ffffff;
     border-radius: 13px;
     align-items: center;
 
-    position: relative; /* ✅ added */
+    position: relative;
 }
 
 .picture img {
-    width: 400px;
+    width: 200px;
     margin: 10px 30px;
     animation-name: bob;
     animation-duration: 2s;
@@ -38,7 +38,7 @@ body {
 }
 
 .container3 {
-    width: 450px;
+    width: 200px;
     height: 110px;
     background: -webkit-linear-gradient(#d53b3b, #972323);
     border-radius: 13px;
@@ -48,7 +48,7 @@ body {
 }
 
 .container4 {
-    width: 440px;
+    width: 180px;
     height: 90px;
     background-color: #ffffff;
     border-radius: 13px;
@@ -57,7 +57,7 @@ body {
 }
 
 .text {
-    font-size: 60px;
+    font-size: 30px;
     background: -webkit-linear-gradient(#d53b3b, #972323);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -67,24 +67,26 @@ body {
 }
 
 .container5 {
-    width: 760px;
+    width: 360px;
     height: 140px;
     background: -webkit-linear-gradient(#d53b3b, #972323);
     border-radius: 13px;
+    justify-content: center;
 
-    position: absolute; /* ✅ added */
+    position: absolute;
     top: 20px;
-    left: 500px;
+    left: 280px;
 
     animation: bob 2s ease-in-out infinite alternate;
 }
 
 .container6 {
-    width: 740px;
+    width: 340px;
     height: 110px;
     background-color: #ffffff;
     border-radius: 13px;
     margin: auto;
+    justify-content: center;
     animation: bob 2s ease-in-out infinite alternate;
 }
 
@@ -108,7 +110,7 @@ body {
 }
 
 .text2 {
-    font-size: 30px;
+    font-size: 19px;
     background: -webkit-linear-gradient(#d53b3b, #972323);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
