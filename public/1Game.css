@@ -1,3 +1,5 @@
+@media (max-width: 768px) {
+
 body {
             font-family: 'Quicksand', Arial, sans-serif;
             background: url(../assets/Images/Bg.png);
@@ -109,3 +111,5 @@ body {
             font-weight: bolder;
             justify-content: center;
         }
+
+    }

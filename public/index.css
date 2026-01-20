@@ -1,3 +1,4 @@
+ @media (max-width: 768px) {
 body {
     background: url(../assets/Images/Bg.png);
     font-family: 'Quicksand', Arial, Helvetica, sans-serif;
@@ -161,3 +162,4 @@ figcaption {
     margin: auto 30px;
     animation: bob 2s ease-in-out infinite alternate;
 }
+ }
