@@ -28,7 +28,7 @@ body {
 }
 
 .picture img {
-    width: 200px;
+    width: 230px;
     margin: 10px 30px;
     animation-name: bob;
     animation-duration: 2s;

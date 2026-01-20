@@ -65,18 +65,6 @@
         updateDisplay();
     }, 1000);
 
-    function spawnApple() {
-        const apple = document.createElement("div");
-        apple.className = "apple";
-        apple.textContent = "🍎";
-        apple.style.left = Math.random() * window.innerWidth + "px";
-        apple.style.fontSize = 16 + Math.random() * 24 + "px";
-        apple.style.animationDuration = 2 + Math.random() * 3 + "s";
-        document.body.appendChild(apple);
-        setTimeout(() => apple.remove(), 5000);
-    }
-
-    setInterval(spawnApple, 600);
     setInterval(saveGame, 5000);
 
     window.onload = loadGame;
