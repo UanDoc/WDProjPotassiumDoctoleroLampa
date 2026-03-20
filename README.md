@@ -77,3 +77,7 @@ Features:
 
 Header
 ![The updated header](/assets/Wireframe/Header2.png)
+
+## FINAL MODIFICATION PROPOSAL
+
+The final modification of this project will include a pre-set leaderboard so that the player would feel more accomplished whenever they overtake a "person" on the leaderboard. Although we cannot provide actual progress from actual people, because neither of us know how to connect our website to the internet; we will provide the 2nd best option, a pre-set leaderboard.
