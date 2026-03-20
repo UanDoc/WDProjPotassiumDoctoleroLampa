@@ -83,3 +83,12 @@ Header
 The final modification of this project will include a pre-set leaderboard so that the player would feel more accomplished whenever they overtake a "person" on the leaderboard. Although we cannot provide actual progress from actual people, because neither of us know how to connect our website to the internet; we will provide the 2nd best option, a pre-set leaderboard.
 
 The data included in the leaderboard will be rearranged whenever the player beats another person; additionally, there will be achievements based on the amount of people the player manages to beat.
+
+Header:
+![NewHeader](/assets/Wireframe/3.png)
+
+Leaderboard:
+![Leaderboard1](/assets/Wireframe/1.png)
+
+Leaderboard (if you have too few apples):
+![Leaderboard2](/assets/Wireframe/2.png)
