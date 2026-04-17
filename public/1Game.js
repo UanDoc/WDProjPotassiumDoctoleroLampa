@@ -68,3 +68,7 @@
     setInterval(saveGame, 5000);
 
     window.onload = loadGame;
+
+    function restart(){
+        localStorage.clear();
+    }
